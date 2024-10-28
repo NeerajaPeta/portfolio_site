@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+      font-family: sans-serif;
+      margin: 0;
+      text-align: center;
+       padding: 2rem;
+       background: #333; /* Dark background for header */
+      color:white;
+    }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the profile image and other content */
+    padding-top: 20px; /* Add some space at the top */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+    margin-bottom: 20px; /* Space between the nav bar and the profile image */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; /* Set a background color if desired */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+    justify-content: center;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Set link color */
+    font-weight: bold;
+    padding: 5px 10px; /* Space around each link */
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px; /* Add space from the fixed navbar */
+    border: 2px solid white;
+}
+ .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+     
+      border-radius: 5%;
+      margin-bottom: 40px;
+      color:white;
+    }
+
+    
+   
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      margin-bottom: 40px;
+    }
+
+ 
+   
+
+    
+
+    #skills {
+      padding: 40px;
+      background-color: #f4f4f4;
+      color:#333;
+    }
+
+    #skills ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    
+
+
+#works h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#works p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+section:hover {
+   
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 8px 16px; /* Enhance shadow on hover */
+}
+
+
+   #experience{
+  
+    padding: 40px;
+      background-color: #f4f4f4;
+      color:#333;
+   }
+   #behavioralskills{
+   
+   padding: 40px;
+      background-color: #f4f4f4;
+      color:#333;
+   }
+   
+    #contact {
+     
+      padding: 40px;
+      background-color: #f4f4f4;
+      color:#333;
+    }
+
+    
+    footer {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    /* Scroll Arrow Styles */
+.scroll-down, .scroll-up {
+    font-size: 32px;
+    color: #4a90e2;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+}
+
+.scroll-down {
+    bottom: 80px; /* Position it above the scroll-up button */
+    animation: bounce 2s infinite;
+}
+
+.scroll-up {
+    bottom: 20px; /* Position it at the bottom right corner */
+    display: none; /* Initially hidden */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+    
